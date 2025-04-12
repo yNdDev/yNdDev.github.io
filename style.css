@@ -1,0 +1,127 @@
+/* Corpo da página */
+body {
+    font-family: 'Poppins', sans-serif; /* Definindo a fonte */
+    margin: 0; /* Remover a margem padrão */
+}
+
+/* Estilo do botão */
+.button {
+    display: inline-block;
+    padding: 15px 30px; /* Tamanho do botão (altura e largura) */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-align: center;
+    text-decoration: none; /* Remove sublinhado */
+    color: rgb(5, 5, 5); /* Cor do texto */
+    background-image: linear-gradient(90deg, #ffd900 60%, #f1a854 ); /* Gradiente com amarelo começando em 30% da largura */
+    border: 3px solid #0a0a0a; /* Bordas com 3px de espessura (laranja) */
+    border-radius: 25px; /* Bordas arredondadas */
+    transition: all 0.3s ease; /* Transição suave para efeitos de hover */
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+.button:hover {
+    background-color: #F68300; /* Fundo laranja */
+    color: rgb(197, 32, 156); /* Cor do texto em branco */
+    cursor: pointer; /* Aponta para indicar que é clicável */
+}
+
+
+/* Seção Home */
+#home {
+    background-image: url("assets/img/bg.jpg"); /* A imagem será clara e visível na Home */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: 50% 70%; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    min-height: 80vh; /* Garante que a seção ocupe toda a altura da tela */
+    color: white; /* Cor do texto da Home */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 1;
+}
+
+#home h1 {
+    font-size: 4rem; /* Aumenta o tamanho do título */
+    font-weight: bold; /* Deixa o texto em negrito */
+    position: relative; /* Permite ajustar a posição do título */
+    top: -120px; /* Mover o título para cima (ajuste conforme necessário) */
+    margin-bottom: 1rem; /* Espaço abaixo do título */
+}
+
+
+#btn_download {
+    margin-top: 200px; /* Mover o botão 50px para baixo */
+}
+
+
+/* Seções restantes (sobre, currículo, portfólio, contato) */
+.section {
+    background-image: url("assets/img/bg.jpg"); /* Usando a mesma imagem */
+    background-size: cover;
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Garante que a seção ocupe toda a altura da tela */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0.1; /* Torna a imagem quase invisível nas outras seções */
+    padding: 100px 2rem; /* Espaço para o conteúdo */
+}
+
+/* Navbar fixa no topo */
+header {
+    background: linear-gradient(90deg, #FFF8F0, #F68300, #FD9EFF);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+/* Navegação da navbar */
+nav {
+    display: flex;
+    justify-content: flex-end; /* Alinha os links à direita */
+    gap: 20px; /* Espaço entre os links */
+    padding: 0.2rem; /* Espaçamento interno */
+}
+
+nav a {
+    color: white; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    padding: 0.5rem 1rem; /* Tamanho do padding (espaçamento dentro dos links) */
+    border-radius: 5px; /* Bordas arredondadas nos links */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+}
+
+nav a:hover {
+    background-color: #ffcc99; /* Cor de fundo ao passar o mouse */
+    color: #333; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilo para telas menores (responsividade) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Alinha os links em coluna */
+        align-items: center; /* Alinha os links ao centro */
+        padding: 1rem; /* Ajuste o padding para telas pequenas */
+    }
+
+    nav a {
+        font-size: 1.5rem; /* Aumenta o tamanho da fonte em telas pequenas */
+        padding: 1rem; /* Aumenta o padding para dar mais espaço aos links */
+        width: 100%; /* Faz os links ocuparem toda a largura disponível */
+        text-align: center; /* Alinha o texto ao centro */
+    }
+}
+
+/* Estilo do Footer */
